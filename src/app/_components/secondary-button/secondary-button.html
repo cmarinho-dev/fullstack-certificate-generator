@@ -1,0 +1,6 @@
+<button [ngStyle]="disabled ? {'opacity': '50%'} : {}" class="custom-button d-flex align-items-center">
+  @if (phClass) {
+    <i class="{{phClass}}"></i>
+  }
+  {{buttonText}}
+</button>

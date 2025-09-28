@@ -65,4 +65,40 @@ label {
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   padding: 8px 12px;
+  height: 40px;
+}
+
+.custom-input:focus {
+  border: 1px solid #3b5ac2;
+  box-shadow: none;
+}
+
+.custom-input-group {
+  margin-bottom: 20px !important;
+}
+
+.custom-input-group:has(input:focus) label {
+  color: #3b5ac2;
+}
+
+.error-message {
+  margin-top: 8px;
+  gap: 4px;
+  color: #d71d1d;
+}
+
+.error-message p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+/* .custom-input-group:has(.error-message) > label {
+  color: #d71d1d;
+} */
+
+.text-danger-label {
+  color: #d71d1d;
 }

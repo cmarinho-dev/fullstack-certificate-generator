@@ -1,0 +1,29 @@
+<div class="d-flex flex-column align-items-center">
+  <div class="d-flex justify-content-between align-items-center w-100 certificate-menu">
+    <div routerLink="/" class="d-flex align-items-center back-btn">
+      <i class="ph ph-arrow-left"></i>
+      <p class="m-0">Voltar</p>
+    </div>
+    <app-secondary-button (click)="certificateDownload()" phClass="ph ph-download-simple" buttonText="Download"></app-secondary-button>
+  </div>
+  @if (certificate) {
+  <div #certificateContainer class="certificate d-flex justify-content-center align-items-center">
+    <img class="medal-icon" src="certificate/certificate_medal.png" alt="ícone de medalha">
+    <div class="certificate-content">
+      <img class="certificate-signature-img" src="certificate/certificate_signature.svg" alt="assinatura">
+      <div class="certificate-info d-flex flex-column align-items-center">
+        <div class="certificate-header">
+          <h1>CERTIFICADO DE CONCLUSÃO</h1>
+          <p>Este certificado comprova que</p>
+        </div>
+        <p class="certificate-student-name">{{certificate.name}}</p>
+        <div class="certificate-activity-list-group">
+          <p class="certificate-activity-list-title">Concluiu com sucesso as seguintes atividades:</p>
+          <p class="certificate-activity-list">{{certificate.activities.join(', ')}}</p>
+        </div>
+      </div>
+      <p class="certificate-date">Emitido em {{certificate.issueDate}}</p>
+    </div>
+  </div>
+  }
+</div>
