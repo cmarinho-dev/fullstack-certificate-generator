@@ -2,6 +2,9 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
 
+> [!NOTE]
+> Can you visit this website on [Netlify Deploy](https://cmarinho-certificate-generator.netlify.app/)
+
 ## Development server
 
 To start a local development server, run:
